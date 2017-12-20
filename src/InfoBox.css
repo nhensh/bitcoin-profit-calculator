@@ -2,6 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 
 .box {
