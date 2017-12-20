@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   getData = (start, end, value) => {
-    const url = `http://api.coindesk.com/v1/bpi/historical/close.json?start=${start}&end=${end}&currency=GBP`;
+    const url = `https://api.coindesk.com/v1/bpi/historical/close.json?start=${start}&end=${end}&currency=GBP`;
 
     fetch(url).then( r => r.json())
       .then((bitcoinData) => {
@@ -118,7 +118,7 @@ class App extends Component {
           </div>
         </div>
         <div className='row'>
-          <div id="coindesk"> Powered by <a href="http://www.coindesk.com/price/" target="_blank">CoinDesk</a></div>
+          <div id="coindesk"> Powered by <a href="https://www.coindesk.com/price/" target="_blank">CoinDesk</a></div>
         </div>
       </div>
 
